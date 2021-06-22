@@ -21,7 +21,7 @@ jwt expiry time is set to 5 min.
 
 ### Run Project
 `
-dotnet run
+dotnet run  //will run on  http://localhost:5000
 `
 ### build Project
 `
