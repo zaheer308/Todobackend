@@ -14,6 +14,11 @@ https://dotnet.microsoft.com/download/dotnet/3.1
 connection string can be found in appsettings.json , Modify it according to your local environment.
 `
 
+## JWT Token
+`
+jwt expiry time is set to 5 min.
+`
+
 ### Run Project
 `
 dotnet run
