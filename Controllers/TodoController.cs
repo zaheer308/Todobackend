@@ -35,6 +35,7 @@ namespace TodoApi.Controllers
 
         [HttpPost]
         [Route("[action]")]
+        [Authorize]
         public IActionResult Insert([FromBody] TodoItem model)
         {
             model.Datetime = DateTime.Now;
@@ -44,6 +45,7 @@ namespace TodoApi.Controllers
         }
         [HttpPost]
         [Route("[action]")]
+        [Authorize]
         public IActionResult Update([FromBody] TodoItem model)
         {
             model.Datetime = DateTime.Now;
@@ -54,6 +56,7 @@ namespace TodoApi.Controllers
 
         [HttpPost]
         [Route("[action]")]
+        [Authorize]
         public IActionResult FindbyId([FromBody] Params obj)
         {
             var userid = Convert.ToInt32(obj.paramstring);
@@ -68,6 +71,7 @@ namespace TodoApi.Controllers
 
         [HttpPost]
         [Route("[action]")]
+        [Authorize]
         public IActionResult DeletebyId([FromBody] Params obj)
         {
             var id = Convert.ToInt32(obj.paramstring);
